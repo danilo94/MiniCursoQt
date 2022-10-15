@@ -34,7 +34,6 @@ private:
 
     BitCoinMonitor *m_monitor;
 
-    QList<double>data;
 
     double m_higherValue=0;
     double m_lowerValue=999999;

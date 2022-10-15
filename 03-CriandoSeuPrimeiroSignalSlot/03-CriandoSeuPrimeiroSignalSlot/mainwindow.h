@@ -27,5 +27,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    int m_vezesPressionado=0;
 };
 #endif // MAINWINDOW_H

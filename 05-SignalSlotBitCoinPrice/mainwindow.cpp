@@ -22,7 +22,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::onReceiveUpdateBitCoinUpdate(double value)
 {
-    data.append(value);
     updateHigherBitcoinPrice(value);
     updateLowerBitcoinPrice(value);
 }

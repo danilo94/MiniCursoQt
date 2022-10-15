@@ -33,7 +33,7 @@
       <item>
        <widget class="QPushButton" name="pushButton">
         <property name="text">
-         <string>Não me aperte !</string>
+         <string>Botão Conectado Diretamente</string>
         </property>
        </widget>
       </item>
