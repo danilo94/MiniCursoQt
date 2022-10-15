@@ -2,7 +2,7 @@
 
 CustomItem::CustomItem(QTreeWidgetItem *parent, const QStringList &strings, int type) : QTreeWidgetItem(parent,strings,type)
 {
-
+    m_objectName = strings.first();
 }
 
 CustomItem::~CustomItem()

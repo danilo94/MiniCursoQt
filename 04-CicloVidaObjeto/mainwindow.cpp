@@ -20,12 +20,22 @@ void MainWindow::on_pushButton_clicked()
 {
 
     CustomItem *item;
+    QTreeWidgetItem *selectedItem = nullptr;
+    QString objectName = QString("Objeto: %1").arg(m_items.size()) ;
     if(ui->treeWidget->selectedItems().size()==1){
-        item = new CustomItem(ui->treeWidget->selectedItems().first(), QStringList(QString("Objeto: %1").arg(m_items.size())),0);
+        selectedItem = ui->treeWidget->selectedItems().first();
     }
-    else{
-        item = new CustomItem(nullptr, QStringList(QString("Objeto: %1").arg(m_items.size())),0);
+
+
+    if (!ui->nomeObjeto->text().isEmpty()){
+        objectName = ui->nomeObjeto->text();
     }
+
+
+    item = new CustomItem(selectedItem, QStringList(objectName),0);
+    item->setIcon(0,QIcon(":icones/icones/check.png"));
+
+
     m_items.append(item);
     ui->treeWidget->insertTopLevelItem(0,item);
     ui->treeWidget->expandAll();
@@ -36,7 +46,7 @@ void MainWindow::on_pushButton_2_clicked()
 {
     if (ui->treeWidget->selectedItems().size()==1){
         ui->treeWidget->removeItemWidget(ui->treeWidget->selectedItems().first(),0);
-        delete ui->treeWidget->selectedItems().first();
+        delete ui->treeWidget->selectedItems().takeFirst();
     }
 }
 

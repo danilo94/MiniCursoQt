@@ -11,6 +11,11 @@ public:
     CustomItem(QTreeWidgetItem *parent, const QStringList &strings, int type = Type);
 
     ~CustomItem();
+
+
+private:
+
+    QString m_objectName;
 };
 
 #endif // CUSTOMITEM_H
