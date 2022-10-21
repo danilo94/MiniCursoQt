@@ -15,11 +15,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void rodarOperacaoIntensivaEmOutraThread();
+    void receberResultadoThread(QString valor);
+
 private:
     void initValidator();
-
-private slots:
-    void operacaoIntensiva();
 
 private:
     Ui::MainWindow *ui;

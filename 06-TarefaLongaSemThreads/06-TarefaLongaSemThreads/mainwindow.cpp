@@ -35,9 +35,6 @@ void MainWindow::operacaoIntensiva()
     for (int i=0; i<= numeroIteracoes; i++){
         for (int j=0; j <= numeroIteracoes; j++){
             for (int k=0; k<=numeroIteracoes; k++){
-                if (k%1000 == 0){
-                    QCoreApplication::processEvents();
-                }
                 result += i + j + k;
             }
         }

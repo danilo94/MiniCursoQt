@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Alocação de Memória Simples</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Numero de Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="numeroObjetosAlocacaoSimples"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="criarObjetosPushButton">
+         <property name="text">
+          <string>Criar Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="destruirObjetosPushButton">
+         <property name="text">
+          <string>Destruir Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="esvaziarListaPushButton">
+         <property name="text">
+          <string>Esvaziar Lista</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Alocação de Memória com Ponteiros Inteligentes</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Numero de Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="numeroObjetosSmartPointer"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="criarObjetosSmartPointer">
+         <property name="text">
+          <string>Criar Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="destruirObjetosSmartPointer">
+         <property name="text">
+          <string>Destruir Objetos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="esvaziarListaSmartPointer">
+         <property name="text">
+          <string>Esvaziar Lista</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>188</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
