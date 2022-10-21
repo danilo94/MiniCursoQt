@@ -1,5 +1,5 @@
 # Minicurso Qt - SECOM XI
-## Neste repositório estão concentradas todas as atividades práticas que iremos ministrar neste mini curso
+## Neste repositório estão concentradas todas as atividades práticas que iremos utilizar durante o minicurso
 ## Temas
 
 - 01 - Primeiro Hello World Em uma aplicação não gráfica
