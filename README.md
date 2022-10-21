@@ -7,5 +7,7 @@
 - 03 - Conectando Objetos através de signal/slot
 - 04 - Manipulando Timers Dentro do Qt
 - 05 - Entendendo o ciclo de vida de um objeto Qt
-- 
+- 06 - Operações longas em aplicações Qt
+- 07 - Operações longas em aplicações Qt utilizando threads
+- 08 - Manipulação de ponteiros/ponteiros inteligentes
 

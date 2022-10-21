@@ -27,6 +27,12 @@ private slots:
 
     void on_esvaziarListaPushButton_clicked();
 
+    void on_criarObjetosSmartPointer_clicked();
+
+    void on_destruirObjetosSmartPointer_clicked();
+
+    void on_esvaziarListaSmartPointer_clicked();
+
 private:
     Ui::MainWindow *ui;
 
