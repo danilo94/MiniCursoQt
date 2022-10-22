@@ -16,6 +16,7 @@ public:
 private:
 
     QString m_objectName;
+
 };
 
 #endif // CUSTOMITEM_H
