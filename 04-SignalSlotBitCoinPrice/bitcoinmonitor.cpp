@@ -45,6 +45,7 @@ void BitCoinMonitor::getBitCoinPrice()
 
 double BitCoinMonitor::getBitCoinPriceFromJson(QString jsonSerialized)
 {
+    qDebug() << jsonSerialized;
     double bitcoinPrice = 0;
     QJsonDocument doc = QJsonDocument::fromJson(jsonSerialized.toUtf8());
     QJsonObject obj = doc.object();

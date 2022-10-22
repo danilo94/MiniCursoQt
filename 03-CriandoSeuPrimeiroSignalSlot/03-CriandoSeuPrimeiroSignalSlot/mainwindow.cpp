@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->connect(ui->botaoSemSlot,&QPushButton::clicked,this,&MainWindow::quandoUsuarioPressionarBotao);
 }
 
 MainWindow::~MainWindow()
@@ -23,7 +24,10 @@ void MainWindow::inicializarBotoes()
 
 void MainWindow::quandoUsuarioPressionarBotao()
 {
-
+    m_vezesPressionado++;
+    QMessageBox msgBox;
+    msgBox.setText(QString("Olá, Você clicou no botão %1 vezes").arg(m_vezesPressionado));
+    msgBox.exec();
 }
 
 
@@ -33,5 +37,11 @@ void MainWindow::on_pushButton_clicked()
     QMessageBox msgBox;
     msgBox.setText(QString("Olá, Você clicou no botão %1 vezes").arg(m_vezesPressionado));
     msgBox.exec();
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
 }
 

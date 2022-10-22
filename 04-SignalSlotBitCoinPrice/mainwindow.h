@@ -4,9 +4,6 @@
 #include "bitcoinmonitor.h"
 
 #include <QMainWindow>
-#include <QChartView>
-#include <QChart>
-#include <QLineSeries>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
